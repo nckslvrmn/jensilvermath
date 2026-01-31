@@ -5,18 +5,28 @@
 
 <title>jensilvermath.com | things I like about math</title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<!-- PressWork Theme Base CSS -->
+<link rel="stylesheet" href="/css/presswork-theme.css" type="text/css" media="screen">
 <!-- PressWork Theme Option CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<parameter name="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 <style type="text/css">
-	body { font-family: Open Sans; font-size: 14px; }
-	h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: Quattrocento; }
-	#body-wrapper { color: #444444; width: 950px; padding: 10px; background-color: #FFFFFF; }
+	body { font-family: 'Open Sans', sans-serif; font-size: 14px; }
+	h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: 'Quattrocento', serif; }
+	#body-wrapper { color: #444444; width: 950px; padding: 10px; background-color: #FFFFFF; margin: 0 auto; }
 	#headerbanner, #footer { width: 950px; }
 	#headerbanner li.mainl#header_image { background-size: 950px; }
-	#main-wrapper > li { margin: 0 25px; }
+	#main-wrapper { list-style: none; margin: 0; padding: 0; overflow: hidden; }
+	#main-wrapper > li { float: left; margin: 0 25px; }
 	#main-wrapper .el3 { *margin-left: 50px; }
-	#firstsidebar { width: 200px; }
-	#secondsidebar { width: 200px; }
-	#maincontent { width: 700px; }
+	#firstsidebar { width: 200px; float: left; }
+	#secondsidebar { width: 200px; float: left; }
+	#maincontent { width: 700px; float: left; }
+	.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	.clearfix { display: inline-block; }
+	* html .clearfix { height: 1%; }
+	.clearfix { display: block; }
 	body.fullwidth #maincontent { width: 950px; }
 	.siteheader a { color: #2B904E; }
 	.siteheader a:hover { color: #444444; }
@@ -66,11 +76,6 @@
 <link rel="alternate" type="application/rss+xml" title="jensilvermath.com » Feed" href="/feed/">
 <link rel="alternate" type="application/rss+xml" title="jensilvermath.com » Comments Feed" href="/comments/feed/">
 <link rel="alternate" type="application/rss+xml" title="jensilvermath.com » Hello! Comments Feed" href="/about-me/feed/">
-.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
-
-</style>
-
-<link rel="stylesheet" id="pw_google_font-css" href="http://fonts.googleapis.com/css?family=Open+Sans%7CQuattrocento&amp;ver=6.9" type="text/css" media="all">
 <link rel="canonical" href="/">
 		
 </head>
@@ -132,26 +137,9 @@
 	     <footer class="clearfix fl">
 	    	</footer> 
 	    </article>
-<div id="comments"> <!-- beging comments -->
-	
-		<div id="respond" class="comment-respond">
-									<!--[if !IE]><![endif]--><!-->
-					<script>
-						document.addEventListener('DOMContentLoaded', function () {
-							for (var i = 0; i < commentForms.length; i++) {
-								commentForms[i].allowTransparency = false;
-								commentForms[i].scrolling = 'no';
-							}
-						});
-					</script>
-					<!--<![endif]-->
-							</form>
-		</div>
-
-		
-		<input type="hidden" name="comment_parent" id="comment_parent" value="">
-
-		</div> <!-- end comments -->
+<div id="comments">
+	<!-- Comments disabled - static site -->
+	</div> <!-- end comments -->
     	</li> <!-- end #maincontent -->
     	<li id="firstsidebar" role="complementary" class="el2"> <!-- begin firstsidebar -->
 
@@ -268,14 +256,8 @@
        	<li id="extendedfooter" class="foot" role="complementary"></li><li id="copyright" class="foot">© 2026 <a href="/">jensilvermath.com</a>. All Rights Reserved. Created using <a href="http://presswork.me/">PressWork</a>.</li>    </ul> <!-- end #footer -->
 		</footer> <!-- end footer -->
 </div> <!-- end #body-wrapper -->
-<script type="module">
-/* <![CDATA[ */
-/*! This file is auto-generated */
-const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
 
-/* ]]> */
-</script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- PressWork Video Resizer Script -->
 <script type="text/javascript">
 /* <![CDATA[ */
@@ -293,66 +275,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 })(jQuery);
 /* ]]> */
 </script>
-<!-- eof PressWork Video Resizer Script -->	
-			<script type="text/javascript">
-			(function () {
-								const watchReply = function() {
-					// Check addComment._Jetpack_moveForm to make sure we don't monkey-patch twice.
-					if ( 'undefined' !== typeof addComment && ! addComment._Jetpack_moveForm ) {
-						// Cache the Core function.
-						addComment._Jetpack_moveForm = addComment.moveForm;
-						const commentParent = document.getElementById( 'comment_parent' );
-
-						function tellFrameNewParent ( commentParentValue ) {
-							const url = new URL( iframe.src );
-							if ( commentParentValue ) {
-								url.searchParams.set( 'replytocom', commentParentValue )
-							} else {
-								url.searchParams.delete( 'replytocom' );
-							}
-							if( iframe.src !== url.href ) {
-								iframe.src = url.href;
-							}
-						};
-
-						cancel.addEventListener( 'click', function () {
-							tellFrameNewParent( false );
-						} );
-
-						addComment.moveForm = function ( _, parentId ) {
-							tellFrameNewParent( parentId );
-							return addComment._Jetpack_moveForm.apply( null, arguments );
-						};
-					}
-				}
-				document.addEventListener( 'DOMContentLoaded', watchReply );
-				// In WP 6.4+, the script is loaded asynchronously, so we need to wait for it to load before we monkey-patch the functions it introduces.
-
-								
-
-				window.addEventListener('message', function(event) {
-						return;
-					}
-
-					if (!event?.data?.iframeUniqueId && !event?.data?.height) {
-						return;
-					}
-
-					const eventDataUniqueId = event.data.iframeUniqueId;
-
-					// Change height for the matching comment iframe
-					for (let i = 0; i < commentIframes.length; i++) {
-						const iframe = commentIframes[i];
-						const url = new URL(iframe.src);
-						const iframeUniqueIdParam = url.searchParams.get('iframe_unique_id');
-						if (iframeUniqueIdParam == event.data.iframeUniqueId) {
-							iframe.style.height = event.data.height + 'px';
-							return;
-						}
-					}
-				});
-			})();
-		</script>
-		<!-- PressWork framework created by c.bavota & Brendan Sera-Shriar - http://presswork.me -->
+<!-- eof PressWork Video Resizer Script -->
+<!-- PressWork framework created by c.bavota & Brendan Sera-Shriar - http://presswork.me -->
 </body>
 </html>
